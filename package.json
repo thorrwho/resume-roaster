@@ -1,0 +1,12 @@
+{
+  "name": "resume-roast",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Paste a resume, get roasted, find the one line of real advice.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node tests/roast.test.js"
+  }
+}

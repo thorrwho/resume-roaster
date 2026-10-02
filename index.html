@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Resume Roast: tawa garam hai</title>
+<meta name="description" content="Paste your resume. Get roasted like roti on a hot tawa. One line is real advice. Find it, babe.">
+<meta name="theme-color" content="#FFB703">
+<meta property="og:title" content="Resume Roast: tawa garam hai">
+<meta property="og:description" content="Paste your resume. Get roasted like roti on a hot tawa. One line is real advice. Find it, babe.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23E9B067' stroke='%231B1A3A' stroke-width='5'/%3E%3Ccircle cx='50' cy='34' r='6' fill='%23E63B2E' stroke='%23FFB703' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,900&family=Kalam:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFF4DC; --card:#FFFDF8; --ink:#1B1A3A; --muted:#5E5A7A; --line:rgba(27,26,58,.2); --field:#FFFFFF;
+  --haldi:#FFB703; --chilli:#E63B2E; --chilli-d:#A8231A; --teal:#0E7C86; --pink:#FF8FAB;
+  --t1:#FFE29A; --t2:#FFC9C0; --t3:#BDEBE4; --t4:#E2D7FF; --t5:#FFD3E1; --pat:.055; --shadow:rgba(27,26,58,.14);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#15133B; --card:#211E5A; --ink:#FFF3DC; --muted:#C9C4EA; --line:rgba(255,243,220,.28); --field:#1A1748;
+    --teal:#35D6C4; --t1:rgba(255,183,3,.2); --t2:rgba(230,59,46,.28); --t3:rgba(53,214,196,.2); --t4:rgba(165,140,255,.24); --t5:rgba(255,143,171,.22); --pat:.07; --shadow:rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#15133B; --card:#211E5A; --ink:#FFF3DC; --muted:#C9C4EA; --line:rgba(255,243,220,.28); --field:#1A1748;
+  --teal:#35D6C4; --t1:rgba(255,183,3,.2); --t2:rgba(230,59,46,.28); --t3:rgba(53,214,196,.2); --t4:rgba(165,140,255,.24); --t5:rgba(255,143,171,.22); --pat:.07; --shadow:rgba(0,0,0,.4);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background-color:var(--paper);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.6;overflow-x:clip;position:relative}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:var(--pat);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='%231B1A3A'%3E%3Ccircle cx='40' cy='40' r='3'/%3E%3Cellipse cx='40' cy='28' rx='4' ry='8'/%3E%3Cellipse cx='40' cy='52' rx='4' ry='8'/%3E%3Cellipse cx='28' cy='40' rx='8' ry='4'/%3E%3Cellipse cx='52' cy='40' rx='8' ry='4'/%3E%3C/g%3E%3C/svg%3E")}
+:root[data-theme="dark"] body::before{filter:invert(1)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) body::before{filter:invert(1)}}
+.wrap{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:10px 22px 60px}
+em{font-style:italic}
+.hand{font-family:Kalam,"Comic Sans MS",cursive}
+
+/* marquee + toran */
+.marquee{position:relative;z-index:3;background:var(--ink);color:var(--paper);overflow:hidden;white-space:nowrap;padding:9px 0;font-family:Kalam,cursive;font-size:1.05rem}
+.mtrack{display:flex;width:max-content;animation:tick 50s linear infinite}
+.mtrack span{padding:0 18px}
+.mstar{width:14px;height:14px;align-self:center;background:var(--haldi);clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
+@keyframes tick{to{transform:translateX(-25%)}}
+.toran{position:relative;z-index:2;height:44px;margin-top:-1px;overflow:hidden;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='44'%3E%3Cpath d='M0 2H128' stroke='%231B1A3A' stroke-width='3'/%3E%3Cpolygon points='6,2 54,2 30,40' fill='%23FFB703' stroke='%231B1A3A' stroke-width='2.5' stroke-linejoin='round'/%3E%3Cpolygon points='70,2 118,2 94,40' fill='%23E63B2E' stroke='%231B1A3A' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") repeat-x top left/128px 44px}
+.toran::after{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='44'%3E%3Cpolygon points='38,2 86,2 62,40' fill='%230E7C86' stroke='%231B1A3A' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") repeat-x top left/128px 44px;transform:translateX(32px)}
+:root[data-theme="dark"] .toran{filter:brightness(1.1)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;padding:34px 0 26px}
+@media (max-width:860px){.hero{grid-template-columns:1fr;text-align:center;padding-top:22px}.hero-copy .row,.perks{justify-content:center}}
+.kicker{display:inline-block;font-family:Kalam,cursive;font-weight:700;font-size:1.05rem;color:#fff;background:var(--chilli);padding:2px 16px;border-radius:99px;transform:rotate(-2deg)}
+h1{margin:14px 0 0;font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:900;font-size:clamp(2.5rem,6.4vw,4.6rem);line-height:1.02;letter-spacing:-.02em}
+h1 em{position:relative;white-space:nowrap;z-index:0}
+h1 em::after{content:"";position:absolute;left:-4px;right:-4px;bottom:.06em;height:.34em;background:var(--haldi);z-index:-1;border-radius:6px;transform:rotate(-1deg)}
+.lede{font-size:1.1rem;color:var(--muted);max-width:30em;margin:16px 0 22px}
+@media (max-width:860px){.lede{margin-left:auto;margin-right:auto}}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;font:inherit;font-weight:800;font-size:1.05rem;text-decoration:none;cursor:pointer;color:#fff;background:var(--chilli);border:0;border-bottom:5px solid var(--chilli-d);border-radius:16px;padding:12px 26px;transition:transform .1s,border-bottom-width .1s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(3px);border-bottom-width:2px}
+.btn:disabled{opacity:.7;cursor:wait}
+.btn2{display:inline-block;font:inherit;font-weight:700;font-size:.95rem;cursor:pointer;color:var(--ink);background:transparent;border:2px solid var(--ink);border-radius:16px;padding:10px 20px;text-decoration:none}
+.btn2:hover{background:var(--t1)}
+.perks{list-style:none;display:flex;gap:8px;flex-wrap:wrap;padding:0;margin:20px 0 0}
+.perks li{font-size:.82rem;font-weight:700;padding:4px 12px;border-radius:99px;background:var(--t3);border:1.5px solid var(--line)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+
+/* arch + mascot */
+.hero-art{position:relative;display:grid;place-items:center;min-height:470px}
+.arch{position:relative;width:min(330px,78vw);height:430px;border-radius:165px 165px 28px 28px;background:var(--t2);box-shadow:0 0 0 11px var(--haldi),0 0 0 14px var(--ink),0 24px 40px var(--shadow);overflow:hidden}
+.arch::before{content:"";position:absolute;inset:16px;border-radius:150px 150px 18px 18px;border:2.5px dashed rgba(27,26,58,.28)}
+:root[data-theme="dark"] .arch::before{border-color:rgba(255,243,220,.3)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .arch::before{border-color:rgba(255,243,220,.3)}}
+.arch .sun{position:absolute;left:50%;top:92px;width:200px;height:200px;margin-left:-100px;border-radius:50%;background:var(--t1)}
+.arch #heroToast{position:absolute;left:50%;bottom:44px;transform:translateX(-50%);width:300px}
+.hero .toast{display:block;width:300px;height:315px;margin:0 auto;animation:bob 2.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.bub{position:absolute;font-family:Kalam,cursive;font-weight:700;font-size:1.05rem;line-height:1.2;padding:7px 14px;border:2px solid var(--ink);border-radius:16px;color:#1B1A3A;max-width:170px;box-shadow:0 6px 14px var(--shadow)}
+.bub.b1{left:-8px;top:34px;background:#FFE29A;transform:rotate(-5deg)}
+.bub.b2{right:-6px;top:150px;background:#BDEBE4;transform:rotate(4deg)}
+.bub.b3{left:4px;bottom:50px;background:#FFD3E1;transform:rotate(-3deg)}
+@media (max-width:560px){.bub{font-size:.9rem;max-width:130px}.bub.b1{left:-4px}.bub.b2{right:-4px}}
+.star{position:absolute;background:var(--chilli);clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
+.star.s1{width:30px;height:30px;right:30px;top:20px}.star.s2{width:20px;height:20px;left:30px;top:250px;background:var(--teal)}.star.s3{width:24px;height:24px;right:14px;bottom:40px;background:var(--haldi)}
+
+/* sections + cards */
+section{margin-top:46px}
+.sh{display:flex;align-items:center;gap:12px;margin:0 0 14px}
+.sh .num{flex:none;width:34px;height:34px;border-radius:50%;background:var(--haldi);color:#1B1A3A;border:2px solid var(--ink);display:grid;place-items:center;font-weight:800}
+h2{margin:0;font-family:Fraunces,Georgia,serif;font-weight:800;font-size:1.65rem;line-height:1.1;letter-spacing:-.01em}
+.sub{margin:-6px 0 16px;color:var(--muted)}
+.card{background:var(--card);border:2px solid var(--ink);border-radius:26px;padding:24px;box-shadow:0 14px 34px var(--shadow)}
+.pgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:stretch}
+.pgrid>.card:first-child{display:flex;flex-direction:column}
+.pgrid>.card:first-child textarea{flex:1}
+@media (max-width:860px){.pgrid{grid-template-columns:1fr}}
+label.lbl{position:absolute;left:-9999px}
+textarea{width:100%;min-height:330px;resize:vertical;font:inherit;font-size:.93rem;color:var(--ink);background:var(--field);border:2px solid var(--line);border-radius:18px;padding:14px 16px}
+textarea::placeholder{color:var(--muted);opacity:.85}
+textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 4px rgba(14,124,134,.18)}
+.note{color:var(--muted);font-size:.84rem;margin:14px 0 0}
+
+/* roaster picker */
+.tonecard{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:2px solid var(--line);border-radius:20px;background:var(--field);cursor:pointer;margin-bottom:10px;position:relative;transition:transform .12s,border-color .12s}
+.tonecard:hover{transform:translateY(-2px)}
+.tonecard input{position:absolute;opacity:0;pointer-events:none}
+.tonecard:has(input:checked){border-color:var(--ink);background:var(--t1);box-shadow:0 8px 20px var(--shadow)}
+.tonecard:has(input:checked)::after{content:"";position:absolute;right:12px;top:12px;width:20px;height:20px;border-radius:50%;background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3.2 3.2L15 6.8' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.tonecard:has(input:focus-visible){outline:3px solid var(--teal);outline-offset:3px}
+.tonecard .av{flex:none;width:44px;height:44px;border-radius:50%;background:var(--t3);border:2px solid var(--ink);display:grid;place-items:center}
+.tonecard b{display:block;font-weight:800}
+.tonecard span.s{display:block;font-family:Kalam,cursive;font-size:.98rem;line-height:1.25;color:var(--muted)}
+details{margin-top:12px;font-size:.9rem}
+summary{cursor:pointer;font-weight:700}
+pre#sent{white-space:pre-wrap;background:var(--field);border:2px dashed var(--line);border-radius:14px;padding:12px;max-height:220px;overflow:auto;font-size:.8rem;margin:8px 0 0}
+.priv{margin-top:16px;padding:14px 16px;border-radius:20px;background:var(--t3);border:2px solid var(--line);font-size:.9rem}
+.priv b{display:block}
+
+/* result */
+#out{margin-top:34px;display:grid;gap:24px}
+.mtile{flex:none;width:176px;height:200px;border-radius:88px 88px 18px 18px;background:var(--t2);border:2.5px solid var(--ink);overflow:hidden;display:grid;place-items:end center;box-shadow:0 0 0 6px var(--haldi),0 0 0 8.5px var(--ink)}
+.mtile .toast{width:170px;height:179px}
+.verdict{display:flex;gap:30px;align-items:center;flex-wrap:wrap}
+.vtext{flex:1;min-width:230px}
+.score{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:4.2rem;line-height:1}
+.score small{font-family:"Plus Jakarta Sans",sans-serif;font-size:1rem;font-weight:700;color:var(--muted)}
+.gauge{height:20px;background:var(--field);border:2.5px solid var(--ink);border-radius:99px;overflow:hidden;margin:8px 0}
+.gauge i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--haldi),#FF7A3D 55%,var(--chilli));transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.label{font-weight:800}
+.quip{font-family:Kalam,cursive;font-weight:700;font-size:1.55rem;line-height:1.15;color:var(--chilli);margin:6px 0 0}
+.chip{display:inline-block;font-size:.76rem;font-weight:700;border-radius:99px;padding:2px 12px;margin-bottom:8px;background:var(--t1);border:1.5px solid var(--ink)}
+.chip.ai{background:var(--t3)}
+ol.items{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:12px}
+.item{border:2px solid var(--ink);border-radius:18px;padding:12px 16px}
+.item.t1{background:var(--t1)}.item.t2{background:var(--t2)}.item.t3{background:var(--t3)}.item.t4{background:var(--t4)}.item.t5{background:var(--t5)}
+.item .n{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--paper);font-weight:800;font-size:.8rem;margin-right:8px}
+.item .q{font-size:.84rem;color:var(--muted);margin:5px 0 2px;font-style:italic;word-break:break-word}
+.item .t{margin:3px 0 0;font-weight:600}
+.item .tag2{display:none}
+.item.real{background:var(--card);border-color:var(--teal);box-shadow:0 0 0 4px rgba(14,124,134,.22)}
+.item.real .tag2{display:inline-block;background:var(--teal);color:#fff;font-size:.72rem;font-weight:800;border-radius:99px;padding:2px 12px}
+.fixbox{display:none;margin-top:14px;border:2px dashed var(--teal);border-radius:18px;padding:12px 16px;background:var(--t3)}
+.fixbox.on{display:block}
+.fixbox b{display:block;color:var(--teal)}
+.rewrite{margin-top:8px;font-size:.9rem}
+.rewrite code{display:inline-block;margin-top:3px;background:var(--field);border:1.5px solid var(--line);border-radius:10px;padding:3px 10px;font-size:.84rem}
+.jd{white-space:pre-wrap;background:var(--field);border:2px solid var(--line);border-radius:18px;padding:14px;font-size:.88rem;max-height:340px;overflow:auto;word-break:break-word}
+mark{background:linear-gradient(transparent 50%,rgba(255,183,3,.7) 50%);color:inherit;padding:0 1px}
+mark sup{font-size:.65em;font-weight:800;color:var(--chilli);margin-left:1px}
+.loader{text-align:center;padding:26px 10px}
+.loader .mtile{margin:0 auto 18px}
+
+/* how it works */
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:760px){.how{grid-template-columns:1fr}}
+.how .step{border:2px solid var(--ink);border-radius:24px;padding:20px 20px 22px;position:relative;overflow:hidden}
+.how .step:nth-child(1){background:var(--t1)}.how .step:nth-child(2){background:var(--t2)}.how .step:nth-child(3){background:var(--t3)}
+.how .big{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:3.6rem;line-height:1;opacity:.9}
+.how h3{margin:4px 0 4px;font-family:Fraunces,Georgia,serif;font-weight:800;font-size:1.25rem}
+.how p{margin:0;font-size:.94rem}
+.how svg{position:absolute;right:12px;top:12px;width:62px;height:62px}
+
+/* roast wall */
+.wall{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px 20px}
+.w{border:2px solid var(--ink);border-radius:22px;padding:18px 18px 16px;position:relative}
+.w:nth-child(1){background:var(--t1);transform:rotate(-1deg)}.w:nth-child(2){background:var(--t3);transform:rotate(.8deg)}.w:nth-child(3){background:var(--t5);transform:rotate(-.6deg)}
+.w:nth-child(4){background:var(--t4);transform:rotate(.7deg)}.w:nth-child(5){background:var(--t2);transform:rotate(-.8deg)}.w:nth-child(6){background:var(--t1);transform:rotate(.5deg)}
+.w .q{font-size:.82rem;color:var(--muted);font-style:italic;margin:0 0 4px;word-break:break-word}
+.w .r{margin:0;font-weight:700}
+.w .sc{position:absolute;right:12px;top:-12px;background:var(--ink);color:var(--paper);font-weight:800;font-size:.78rem;border-radius:99px;padding:2px 12px}
+
+/* faq + footer */
+.faq details{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:14px 18px;margin:0 0 12px}
+.faq details[open]{border-color:var(--ink)}
+.faq p{margin:8px 0 0;color:var(--muted)}
+.foot{margin-top:50px;text-align:center;font-family:Kalam,cursive;font-size:1.3rem}
+.foot a{color:var(--chilli);font-weight:700}
+
+/* mascot */
+.toast{width:190px;height:200px;overflow:visible;flex:none;--char:0;--spots:.3;--heat:.3}
+.toast .m{display:none}
+.toast[data-mood=calm] .calm,.toast[data-mood=wince] .wince,.toast[data-mood=shock] .shock,.toast[data-mood=burnt] .burnt{display:inline}
+.toast .char{opacity:var(--char)} .toast .spots{opacity:var(--spots)}
+.toast .roti{transform-box:fill-box;transform-origin:center;transition:transform .25s}
+.toast[data-mood=shock] .roti{transform:scale(1.06)}
+.toast .flames{opacity:var(--heat);transform-box:fill-box;transform-origin:50% 100%;animation:flick .5s ease-in-out infinite alternate}
+@keyframes flick{from{transform:scaleY(.86)}to{transform:scaleY(1.08)}}
+.toast .jh{transform-box:fill-box;transform-origin:50% 0;animation:swing 2.2s ease-in-out infinite alternate}
+.toast .jh.r{animation-delay:.5s}
+@keyframes swing{from{transform:rotate(-10deg)}to{transform:rotate(10deg)}}
+.toast .smoke{display:none}
+.toast[data-mood=burnt] .smoke{display:inline}
+.toast .smoke circle{fill:#B9AEA3;opacity:0;animation:rise 2s ease-in infinite}
+.toast .smoke circle:nth-child(2){animation-delay:.6s} .toast .smoke circle:nth-child(3){animation-delay:1.2s}
+@keyframes rise{0%{transform:translateY(10px);opacity:0}30%{opacity:.85}100%{transform:translateY(-26px);opacity:0}}
+.toast.recoil{animation:recoil .55s ease-out}
+@keyframes recoil{0%{transform:none}22%{transform:translateX(-20px) rotate(-12deg) scale(.94)}55%{transform:translateX(9px) rotate(5deg)}100%{transform:none}}
+.toast[data-mood=burnt]{animation:jit .12s linear infinite alternate}
+@keyframes jit{from{transform:translateX(-2px)}to{transform:translateX(2px)}}
+@media (prefers-reduced-motion:reduce){.mtrack,.hero .toast,.toast .flames,.toast .jh,.toast .smoke circle,.toast[data-mood=burnt],.toast.recoil{animation:none}.gauge i{transition:none}html{scroll-behavior:auto}}
+
+/* margin decorations */
+#decos{position:fixed;inset:0;z-index:0;pointer-events:none}
+.deco{position:absolute;animation:float 5.5s ease-in-out infinite;will-change:transform}
+@keyframes float{50%{transform:translateY(-12px)}}
+.deco .hit{width:100%;height:100%;pointer-events:auto;cursor:pointer;clip-path:circle(50%)}
+.deco .spin{width:100%;height:100%;will-change:transform}
+.deco .art{display:block;width:100%;height:100%;overflow:visible;transition:transform .25s;filter:drop-shadow(0 8px 10px var(--shadow))}
+.deco.hot .art{transform:scale(1.1)}
+.deco .ol{stroke:var(--ink)}
+.deco .flame{transform-box:fill-box;transform-origin:50% 100%;animation:flame .45s ease-in-out infinite alternate}
+@keyframes flame{from{transform:scale(.94,.9)}to{transform:scale(1.04,1.06)}}
+.deco .steam{animation:steam 2.4s ease-in-out infinite}.deco .steam.s2{animation-delay:.5s}.deco .steam.s3{animation-delay:1s}
+@keyframes steam{0%,100%{opacity:.35}50%{opacity:.9}}
+@media (prefers-reduced-motion:reduce){.deco,.deco .flame,.deco .steam{animation:none}}
+
+.modal{position:fixed;inset:0;z-index:60;background:rgba(10,8,30,.78);display:flex;align-items:center;justify-content:center;padding:16px}
+.modal[hidden]{display:none}
+.mbox{background:var(--card);color:var(--ink);border:2px solid var(--ink);border-radius:26px;padding:16px;max-width:520px;width:100%;max-height:96vh;overflow:auto;text-align:center}
+.mbox img{display:block;width:100%;max-height:62vh;object-fit:contain;border-radius:16px;margin-bottom:14px}
+.mbox .row{justify-content:center}
+</style>
+</head>
+<body>
+
+<div class="marquee" aria-hidden="true"><div class="mtrack" id="mtrack"></div></div>
+<div class="toran" aria-hidden="true"></div>
+<main class="wrap">
+
+  <section class="hero" style="margin-top:0">
+    <div class="hero-copy">
+      <span class="kicker">placement szn special</span>
+      <h1>Your resume, <em>roasted</em> like roti on a hot tawa.</h1>
+      <p class="lede">Paste it. I'll roast it with sass and zero mercy (or loads of mercy, you pick). One line is real advice. Find it, babe.</p>
+      <div class="row">
+        <a class="btn" id="cta" href="#paste">Roast my resume</a>
+        <button class="btn2" id="sample2" type="button">Try a sad sample</button>
+      </div>
+      <ul class="perks"><li>Free</li><li>No sign-up</li><li>Personal details masked before sending</li></ul>
+    </div>
+    <div class="hero-art">
+      <div class="arch" aria-hidden="true"><div class="sun"></div><div id="heroToast"></div></div>
+      <div class="bub b1" aria-hidden="true">Zero numbers. Zero.</div>
+      <div class="bub b2" aria-hidden="true">Girl, so is the office chair.</div>
+      <div class="bub b3" aria-hidden="true">Marital status? Delete.</div>
+      <i class="star s1" aria-hidden="true"></i><i class="star s2" aria-hidden="true"></i><i class="star s3" aria-hidden="true"></i>
+    </div>
+  </section>
+
+  <section id="paste" aria-label="Paste your resume">
+    <div class="pgrid">
+      <div class="card">
+        <div class="sh"><span class="num">1</span><h2>Paste your resume</h2></div>
+        <label class="lbl" for="resume">Resume text</label>
+        <textarea id="resume" placeholder="Paste your resume or LinkedIn About section here. Plain text works best."></textarea>
+        <div class="row" style="margin-top:16px">
+          <button class="btn" id="run" type="button">Roast me</button>
+          <button class="btn2" id="sample" type="button">Load a sad resume</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="sh"><span class="num">2</span><h2>Pick your roaster</h2></div>
+        <div role="radiogroup" aria-label="Roast style">
+          <label class="tonecard"><input type="radio" name="tone" value="bestie">
+            <span class="av"><svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><circle cx="15" cy="20" r="9" fill="#FFB703" stroke="#1B1A3A" stroke-width="2"/><circle cx="26" cy="20" r="9" fill="#FF8FAB" stroke="#1B1A3A" stroke-width="2"/></svg></span>
+            <span><b>Bestie</b><span class="s">"Babe, I scrolled your bullets looking for one number and found a desert."</span></span></label>
+          <label class="tonecard"><input type="radio" name="tone" value="baddie" checked>
+            <span class="av"><svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="13" width="15" height="11" rx="5" fill="#1B1A3A"/><rect x="22" y="13" width="15" height="11" rx="5" fill="#1B1A3A"/><path d="M18 17h4" stroke="#1B1A3A" stroke-width="2.5"/><path d="M6 16l4 0M25 16l4 0" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+            <span><b>Baddie</b><span class="s">"Zero numbers. Zero. Recruiters do not hire vibes."</span></span></label>
+          <label class="tonecard"><input type="radio" name="tone" value="aunty">
+            <span class="av"><svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="6" fill="#E63B2E"/><circle cx="20" cy="20" r="11" fill="none" stroke="#B9801A" stroke-width="2.5"/></svg></span>
+            <span><b>Aunty ji</b><span class="s">"Where are the numbers, beta? Sharma ji's son writes 'increased sales 40%'."</span></span></label>
+        </div>
+        <div class="priv">
+          <b>What leaves your browser</b>
+          <span id="sentNote">Emails, phone numbers, links, ID numbers and your name are masked first.</span>
+          <details><summary>See exactly what gets sent</summary><pre id="sent">(paste something to preview)</pre></details>
+        </div>
+        <p class="note">Your resume is sent to an AI service only to write the roast. This site does not store it, and the AI provider handles it under its own data policy. If the AI is unavailable, a built-in roaster runs entirely in your browser instead.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="out" aria-live="polite"></div>
+
+  <section aria-label="How it works">
+    <div class="sh"><h2>How it works</h2></div>
+    <div class="how">
+      <div class="step"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="10" width="36" height="46" rx="6" fill="#fff" stroke="#1B1A3A" stroke-width="3"/><rect x="24" y="5" width="16" height="10" rx="4" fill="#E63B2E" stroke="#1B1A3A" stroke-width="3"/><path d="M21 28h22M21 36h22M21 44h14" stroke="#1B1A3A" stroke-width="3" stroke-linecap="round"/></svg><div class="big">1</div><h3>Paste</h3><p>Drop in your resume or LinkedIn About. Personal details get masked in your browser first.</p></div>
+      <div class="step"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6c4 10 16 16 16 30a16 16 0 0 1-32 0c0-8 5-11 8-17 2 5 4 6 6 6-1-6-1-12 2-19z" fill="#FFB703" stroke="#1B1A3A" stroke-width="3" stroke-linejoin="round"/><path d="M32 30c3 5 8 7 8 14a8 8 0 0 1-16 0c0-4 3-6 8-14z" fill="#E63B2E" stroke="#1B1A3A" stroke-width="3" stroke-linejoin="round"/></svg><div class="big">2</div><h3>Get roasted</h3><p>Pick Bestie, Baddie or Aunty ji. You get a brutality score, a verdict and lines that quote you back to yourself.</p></div>
+      <div class="step"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="27" cy="27" r="16" fill="#fff" stroke="#1B1A3A" stroke-width="3"/><path d="M39 39l16 16" stroke="#1B1A3A" stroke-width="6" stroke-linecap="round"/><path d="M20 28l5 5 10-11" fill="none" stroke="#0E7C86" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="big">3</div><h3>Find the real advice</h3><p>One line is genuine feedback in disguise. Spot it, reveal it, and fix your resume.</p></div>
+    </div>
+  </section>
+
+  <section aria-label="Sample roasts">
+    <div class="sh"><h2>The roast wall</h2><span class="hand" style="color:var(--muted)">(sample roasts, not real users)</span></div>
+    <div class="wall">
+      <div class="w"><span class="sc">62 / 100</span><p class="q">"Seeking a challenging position in a reputed organization"</p><p class="r">Every resume since 1998 has said this and not one meant it.</p></div>
+      <div class="w"><span class="sc">71 / 100</span><p class="q">"Responsible for creating a to-do list"</p><p class="r">Girl, so is the office chair. What did YOU change?</p></div>
+      <div class="w"><span class="sc">48 / 100</span><p class="q">"Netflix clone"</p><p class="r">Netflix is not worried. Netflix is not even aware.</p></div>
+      <div class="w"><span class="sc">55 / 100</span><p class="q">"References available upon request"</p><p class="r">The resume version of "my dad has a guy".</p></div>
+      <div class="w"><span class="sc">66 / 100</span><p class="q">"Hardworking, passionate team player"</p><p class="r">That is a horoscope, babe, not a resume.</p></div>
+      <div class="w"><span class="sc">30 / 100</span><p class="q">"MS Office"</p><p class="r">Congratulations, you can open a laptop.</p></div>
+    </div>
+  </section>
+
+  <section class="faq" aria-label="Questions">
+    <div class="sh"><h2>Questions, yaar</h2></div>
+    <details><summary>Is this real AI?</summary><p>Yes, when it can be: a Claude model writes the roast. If the AI is down or over its limit, a rule-based roaster in your browser takes over, and every result says which one wrote it.</p></details>
+    <details><summary>Where does my resume go?</summary><p>Your name, email, phone, links and ID numbers are masked in your browser first. The masked text goes to an AI service only to write the roast. This site does not store it, and the provider handles it under its own data policy. Open "See exactly what gets sent" to check.</p></details>
+    <details><summary>Will the roast be mean?</summary><p>It roasts the document, never you: no jokes about your name, looks or background. Pick Bestie for the gentlest version.</p></details>
+    <details><summary>Why is one line real advice?</summary><p>Because a roast with no takeaway is just noise. The real advice always comes with a concrete fix.</p></details>
+  </section>
+
+  <p class="foot">made with chai and chaos for everyone in placement season</p>
+</main>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Share card" hidden>
+  <div class="mbox">
+    <img id="cardImg" alt="Your roast share card">
+    <div class="row"><button class="btn" id="saveCard" type="button">Save image</button><button class="btn2" id="closeCard" type="button">Close</button></div>
+    <p class="note" id="saveNote"></p>
+  </div>
+</div>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const reduced=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
+
+
+/* marquee */
+(function(){const items=['तवा गरम है','roast szn','one line is real advice','chai pee ke aao','placement season','numbers? kahan hain numbers?','tawa garam hai'];
+  const b=items.map(t=>'<span>'+t+'</span><i class="mstar"></i>').join('');$('mtrack').innerHTML=b+b+b+b})();
+/* ---------- privacy: mask personal details in the browser before anything is sent ---------- */
+function scrub(text){
+  let n=0,t=text;
+  const c=(re,rep)=>{t=t.replace(re,()=>{n++;return rep})};
+  c(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi,'[email]');
+  c(/(?:https?:\/\/|www\.)\S+/gi,'[link]');
+  c(/\b(?:linkedin|github|gitlab|behance|leetcode|codeforces)\.com\/\S*/gi,'[link]');
+  c(/\+\d{1,3}[\s-]?\d[\d\s-]{7,12}\d/g,'[phone]');
+  c(/\b[6-9]\d{9}\b/g,'[phone]');
+  c(/\b\d{4}\s\d{4}\s\d{4}\b/g,'[id number]');
+  const lines=t.split('\n');const i=lines.findIndex(l=>l.trim());
+  if(i>=0){const l=lines[i].trim();if(l.length<=40&&l.split(/\s+/).length<=4&&/^[A-Za-z .'-]+$/.test(l)){lines[i]='[name]';n++}}
+  return{text:lines.join('\n'),count:n};
+}
+
+/* ---------- baddie roti on a tawa ---------- */
+let uid=0;
+function rotiSVG(){const u=++uid;return `<svg class="toast" viewBox="0 0 200 212" data-mood="calm" aria-hidden="true">
+<defs>
+ <radialGradient id="rg${u}" cx="45%" cy="38%" r="75%"><stop offset="0" stop-color="#FFE7B5"/><stop offset=".6" stop-color="#EDB66C"/><stop offset="1" stop-color="#C98536"/></radialGradient>
+ <radialGradient id="cg${u}" cx="50%" cy="50%" r="55%"><stop offset="0" stop-color="#2a1208" stop-opacity="0"/><stop offset=".65" stop-color="#2a1208" stop-opacity=".5"/><stop offset="1" stop-color="#120804" stop-opacity=".95"/></radialGradient>
+ <linearGradient id="fg${u}" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FF3D2E"/><stop offset=".55" stop-color="#FF9A2E"/><stop offset="1" stop-color="#FFE27A"/></linearGradient>
+ <clipPath id="cp${u}"><circle cx="100" cy="100" r="68"/></clipPath>
+</defs>
+<g class="flames"><path d="M44 182 Q40 196 50 206 Q56 196 52 188 Q60 200 66 208 Q72 196 66 184Z" fill="url(#fg${u})"/><path d="M84 184 Q80 200 92 212 Q100 198 96 188 Q106 202 112 210 Q120 196 112 184Z" fill="url(#fg${u})"/><path d="M128 184 Q126 198 136 208 Q142 196 138 188 Q148 198 154 204 Q158 192 148 182Z" fill="url(#fg${u})"/></g>
+<ellipse cx="100" cy="176" rx="90" ry="19" fill="#1f0e17"/><ellipse cx="100" cy="172" rx="82" ry="14" fill="#34202b"/>
+<rect x="176" y="169" width="30" height="9" rx="4.5" fill="#1f0e17" transform="rotate(-8 176 173)"/>
+<g class="roti">
+ <circle cx="100" cy="100" r="70" fill="url(#rg${u})" stroke="#B0691F" stroke-width="3"/>
+ <g class="spots" fill="#6B3510"><ellipse cx="60" cy="68" rx="9" ry="6.5"/><ellipse cx="138" cy="62" rx="8" ry="6"/><ellipse cx="152" cy="116" rx="9" ry="7"/><ellipse cx="50" cy="128" rx="8" ry="6"/><ellipse cx="124" cy="152" rx="9" ry="6"/><ellipse cx="84" cy="54" rx="6" ry="4.5"/><ellipse cx="78" cy="154" rx="7" ry="5"/></g>
+ <g clip-path="url(#cp${u})"><circle class="char" cx="100" cy="100" r="70" fill="url(#cg${u})"/></g>
+</g>
+<ellipse cx="62" cy="118" rx="9" ry="5" fill="#FF7FA8" opacity=".6"/><ellipse cx="138" cy="118" rx="9" ry="5" fill="#FF7FA8" opacity=".6"/>
+<g class="m calm"><path d="M64 84 Q78 78 92 83" fill="none" stroke="#3a1a10" stroke-width="3" stroke-linecap="round"/><path d="M108 78 Q124 68 138 78" fill="none" stroke="#3a1a10" stroke-width="3" stroke-linecap="round"/>
+ <path d="M63 99 Q78 88 93 99 Q78 108 63 99Z" fill="#fff"/><circle cx="78" cy="99" r="5.2" fill="#2a0f1a"/><circle cx="80" cy="97" r="1.6" fill="#fff"/>
+ <path d="M107 99 Q122 88 137 99 Q122 108 107 99Z" fill="#fff"/><circle cx="122" cy="99" r="5.2" fill="#2a0f1a"/><circle cx="124" cy="97" r="1.6" fill="#fff"/>
+ <path d="M61 100 Q78 84 95 99 M62 100 L52 92 M105 99 Q122 84 139 100 M138 100 L148 92 M66 91 L63 86 M73 88 L71 83 M127 88 L129 83 M134 91 L137 86" fill="none" stroke="#1a0810" stroke-width="3.2" stroke-linecap="round"/>
+ <g transform="rotate(-4 100 128)"><path d="M84 126 Q100 118 116 126 Q100 142 84 126Z" fill="#E0245E"/><path d="M84 126 Q100 131 116 126" fill="none" stroke="#8F1238" stroke-width="1.4"/><path d="M93 128 Q100 126 107 128" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".75"/></g></g>
+<g class="m wince"><path d="M62 82 Q78 88 94 80 M106 80 Q122 88 138 82" fill="none" stroke="#3a1a10" stroke-width="3" stroke-linecap="round"/>
+ <path d="M62 101 Q78 92 94 101 M106 101 Q122 92 138 101 M60 102 L50 96 M140 102 L150 96 M68 96 L65 91 M76 94 L75 89 M124 94 L125 89 M132 96 L135 91" fill="none" stroke="#1a0810" stroke-width="3.4" stroke-linecap="round"/>
+ <path d="M88 130 Q94 124 100 130 T112 130" fill="none" stroke="#E0245E" stroke-width="5" stroke-linecap="round"/></g>
+<g class="m shock"><path d="M62 76 Q78 66 94 74 M106 74 Q122 66 138 76" fill="none" stroke="#3a1a10" stroke-width="3" stroke-linecap="round"/>
+ <circle cx="78" cy="98" r="11" fill="#fff" stroke="#1a0810" stroke-width="3"/><circle cx="122" cy="98" r="11" fill="#fff" stroke="#1a0810" stroke-width="3"/><circle cx="78" cy="99" r="5" fill="#2a0f1a"/><circle cx="122" cy="99" r="5" fill="#2a0f1a"/><circle cx="80" cy="96" r="1.6" fill="#fff"/><circle cx="124" cy="96" r="1.6" fill="#fff"/>
+ <path d="M64 92 L55 84 M136 92 L145 84" stroke="#1a0810" stroke-width="3.2" stroke-linecap="round"/>
+ <ellipse cx="100" cy="128" rx="9" ry="11" fill="#E0245E"/><ellipse cx="100" cy="130" rx="5" ry="7" fill="#5a0a22"/></g>
+<g class="m burnt"><path d="M62 84 Q78 86 94 84 M106 84 Q122 86 138 84" fill="none" stroke="#3a1a10" stroke-width="3" stroke-linecap="round"/>
+ <path d="M62 100 Q78 106 94 100 M106 100 Q122 106 138 100 M60 99 L50 92 M140 99 L150 92" fill="none" stroke="#1a0810" stroke-width="3.4" stroke-linecap="round"/>
+ <path d="M90 132 Q100 124 110 132" fill="none" stroke="#E0245E" stroke-width="5" stroke-linecap="round"/></g>
+<circle cx="100" cy="70" r="4.2" fill="#D7263D"/><circle cx="100" cy="70" r="6.8" fill="none" stroke="#F2C14E" stroke-width="1.8"/>
+<circle cx="110" cy="112" r="2" fill="#FFE08A" stroke="#C8921F" stroke-width=".6"/>
+<g class="jh l"><circle cx="31" cy="102" r="3" fill="#F2C14E"/><path d="M23 112 Q31 96 39 112Z" fill="#F2C14E" stroke="#B9801A" stroke-width="1"/><circle cx="25" cy="115" r="2.3" fill="#F2C14E"/><circle cx="31" cy="117" r="2.3" fill="#F2C14E"/><circle cx="37" cy="115" r="2.3" fill="#F2C14E"/></g>
+<g class="jh r"><circle cx="169" cy="102" r="3" fill="#F2C14E"/><path d="M161 112 Q169 96 177 112Z" fill="#F2C14E" stroke="#B9801A" stroke-width="1"/><circle cx="163" cy="115" r="2.3" fill="#F2C14E"/><circle cx="169" cy="117" r="2.3" fill="#F2C14E"/><circle cx="175" cy="115" r="2.3" fill="#F2C14E"/></g>
+<g class="smoke"><circle cx="64" cy="26" r="9"/><circle cx="100" cy="14" r="11"/><circle cx="138" cy="28" r="8"/></g>
+<path class="m wince shock" d="M152 66 Q160 78 152 86 Q144 78 152 66Z" fill="#66D9FF" stroke="#2a0f1a" stroke-width="2"/>
+</svg>`}
+const MOODV={calm:[0,.3,.3],wince:[.12,.5,.5],shock:[.3,.7,.75],burnt:[.62,1,1]};
+function setMood(svg,mood){svg.dataset.mood=mood;const v=MOODV[mood]||MOODV.calm;svg.style.setProperty('--char',v[0]);svg.style.setProperty('--spots',v[1]);svg.style.setProperty('--heat',v[2])}
+function recoil(svg){svg.classList.remove('recoil');void svg.getBoundingClientRect();svg.classList.add('recoil')}
+$('heroToast').innerHTML=rotiSVG();
+
+/* ---------- local (backup) roaster ---------- */
+const VERD={
+ bestie:['Okay babe?? This is actually good. I came to roast and left a fan.','Lightly toasted, babe. A few fixes and you are glowing.','Well done... and not in the good way. But we will fix it together.','Okay, burnt. Deep breath. We are scraping and starting again, babe.'],
+ baddie:['Annoyingly good. Do better so I can do worse.','Medium rare. Still a little pink in the middle.','Well done. As in overcooked.','Burnt to a crisp. Call the fire brigade.'],
+ aunty:['Hmm, okay, I have no complaints. Suspicious.','Not bad, beta, but my eyebrow is up.','Arre arre arre. We need to talk.','Beta... sit down, drink water. We will fix this together.']};
+const LABELS=['Barely warm','Phulka-level','Well done','Jal gayi (burnt)'];
+const bandOf=s=>s<25?0:s<50?1:s<75?2:3;
+const GEN={
+ bestie:['I tried so hard to find something to roast. This is annoying.','The basics are all there, babe. That is rarer than you think.','One small thing: tailor the top third to each job.'],
+ baddie:['I came to roast and found almost nothing. I am furious.','Competent. Boring to roast. Do better.','Fine. Good resume. Disgusting.'],
+ aunty:['Hmm. No complaints. I will find some later.','Not bad, beta. Do not let it go to your head.','Okay okay, this is decent. Sharma ji will be jealous.']};
+const GENFIX='Tailor the top third of your resume to each job post. Mirror three of their keywords honestly, and lead with the project closest to the role.';
+const RULES=[
+ {id:'nometric',w:18,fix:'Put one number in every bullet: users, percent, milliseconds, rupees or hours saved. If you do not have one, estimate honestly.',rewrite:'Cut page load time from 4.2s to 1.8s by lazy-loading images (React, Lighthouse).',
+  r:{bestie:'Babe, I scrolled your bullets looking for one number and found a desert.',baddie:'Zero numbers. Zero. Impact without digits is just a vibe, and recruiters do not hire vibes.',aunty:'Where are the numbers, beta? Sharma ji\'s son writes "increased sales 40%". You write "worked on sales".'},
+  find:(t,c)=>({on:c.bullets.length>=4&&c.digitRatio<.25,snip:c.firstNoNum})},
+ {id:'weak',w:12,fix:'Start every bullet with a strong verb (built, cut, shipped, led) and end with the result.',rewrite:'Built a to-do app in React used by 40 classmates; cut task entry from 5 clicks to 2.',
+  r:{bestie:'"Involved in" and "worked on", babe? That tells me you were in the room, not what you did there.',baddie:'"Responsible for." Girl, so is the office chair. What did YOU change?',aunty:'"Participated in meetings" — attending is not achieving, beta. Even the chairs attend.'},
+  find:t=>{const m=[...t.matchAll(/\b(responsible for|worked on|involved in|helped (?:with|in|to)|assisted (?:in|with)|participated in|duties included)\b[^.\n]{0,60}/gi)];return{on:m.length>=2,snip:m[0]?m[0][0].trim().slice(0,90):null}}},
+ {id:'buzz',w:12,fix:'Delete every adjective that describes you and replace it with a project that proves it.',
+  r:{bestie:'"Hardworking team player" is on literally every resume, babe, so it describes nobody.',baddie:'Hardworking, passionate, quick learner? That is a horoscope, babe, not a resume.',aunty:'Hardworking, passionate, team player... show it, beta, do not announce it.'},
+  find:t=>{const m=[...t.matchAll(/\b(hard[- ]?working|team player|quick learner|fast learner|passionate|detail[- ]oriented|self[- ]motivated|go[- ]getter|dynamic|synergy|result[- ]oriented)\b/gi)];return{on:m.length>=3,snip:m[0]?m[0][0]:null}}},
+ {id:'personal',w:12,fix:'Delete date of birth, marital status, hobbies and the declaration. Use that space for a project or a result.',
+  r:{bestie:'Date of birth and marital status are not on any recruiter\'s checklist, babe. Free that space for something that works for you.',baddie:'Marital status on a resume? The recruiter did not ask and the filter does not care. Delete.',aunty:'Marital status, beta? That goes in a biodata, not a resume. This one is for the job.'},
+  find:t=>{const m=t.match(/\b(date of birth|dob|marital status|father'?s name|mother'?s name|nationality|hobbies|i hereby declare|permanent address)\b[^\n]{0,30}/i);return{on:!!m,snip:m?m[0].trim().slice(0,90):null}}},
+ {id:'tutorial',w:10,fix:'Replace tutorial clones with one project that solves a real problem for real users, and write how many people used it.',rewrite:'Built a mess-menu voting app used by 120 hostel students; 70% weekly active.',
+  r:{bestie:'Calculator, weather app, to-do list: the holy trinity of tutorial projects, babe. Time to build your own.',baddie:'A Netflix clone. Netflix is not worried. Netflix is not even aware.',aunty:'To-do list, weather app... arre, these are practice, not projects, beta.'},
+  find:t=>{const m=[...t.matchAll(/\b(to-?do (?:list|app)|calculator|weather app|tic[- ]?tac[- ]?toe|netflix clone|spotify clone|portfolio website|student management|library management|quiz app|snake game)\b/gi)];return{on:m.length>=1,snip:m[0]?m[0][0]:null}}},
+ {id:'skills',w:10,fix:'Cut skills to the 8 to 10 you could be interviewed on today, grouped by category.',
+  r:{bestie:'That skills list has more items than a shaadi buffet, and I trust the buffet more.',baddie:'Twenty-plus skills? Nobody has twenty skills. Half of these are "I opened it once".',aunty:'So many skills! Even Sharma ji\'s son does not know Photoshop AND Node AND leadership, beta.'},
+  find:(t,c)=>({on:!!c.skillLine,snip:c.skillLine?c.skillLine.slice(0,70):null})},
+ {id:'obj',w:10,fix:'Swap the objective for a 2-line summary: your strongest skill plus one proof, like a project or a number.',rewrite:'Full-stack student who built a booking app used by 200 classmates. Strong in React, Node and SQL.',
+  r:{bestie:'An objective statement in 2026 is giving fax machine, babe. Sweet, but nobody is reading it.',baddie:'"Seeking a challenging position." Every resume since 1998 has said this and not one meant it.',aunty:'"Seeking a challenging position" — we are all seeking, na? Tell them what you can DO, beta.'},
+  find:t=>{const m=t.match(/seeking [^\n.]{5,90}/i)||t.match(/career objective/i);return{on:!!m,snip:m?m[0].trim().slice(0,90):null}}},
+ {id:'nolink',w:8,fix:'Add a GitHub and a live demo link next to every project. A link beats a description.',
+  r:{bestie:'No GitHub, no portfolio link, babe? Your work might be amazing but we will never know.',baddie:'No link to any work. "Trust me" is not a portfolio.',aunty:'No link, beta? How will they see your good work, by telepathy?'},
+  find:(t,c)=>({on:c.words>=60&&!/(github\.com|gitlab\.com|portfolio|https?:\/\/|\[link\])/i.test(t),snip:null})},
+ {id:'certs',w:8,fix:'Keep the 3 most relevant certificates and give the freed space to a project.',
+  r:{bestie:'So many certificates, babe. At this point you are collecting them, not using them.',baddie:'A dozen certificates, zero shipped projects. You are a course completionist, not a builder.',aunty:'Certificates, certificates... a framed one is for the wall, beta, not for the resume.'},
+  find:(t,c)=>({on:c.certLines>=6,snip:null})},
+ {id:'long',w:8,fix:'Cut to one page: keep the 3 strongest projects and drop everything older or weaker.',
+  r:{bestie:'Babe, this resume has chapters. One page, please.',baddie:'It is not a resume, it is a memoir.',aunty:'So long, beta! Who will read it, your grandfather?'},
+  find:(t,c)=>({on:c.words>700,snip:null})},
+ {id:'short',w:10,fix:'Add 2 or 3 projects with what you built, the stack, and one result each.',
+  r:{bestie:'This is so short I checked that it had finished loading, babe.',baddie:'That is not a resume, that is a business card with ambition.',aunty:'So little, beta! Even my WhatsApp status is longer.'},
+  find:(t,c)=>({on:c.words>0&&c.words<90,snip:null})},
+ {id:'edu',w:6,fix:'Move projects above education unless your marks are the strongest thing on the page.',
+  r:{bestie:'Education first, babe? Your CGPA is headlining while your projects sit in the cheap seats.',baddie:'You led with your degree. Everyone has one. Where is the thing you built?',aunty:'Education first? Marks are for the family WhatsApp group, beta. Recruiters want projects.'},
+  find:(t,c)=>({on:c.eduIdx>=0&&c.projIdx>=0&&c.eduIdx<c.projIdx,snip:null})},
+ {id:'email',w:6,fix:'Use firstname.lastname@gmail.com. It is free and it saves your credibility.',
+  r:{bestie:'Babe, that email reads like a gamer tag, and recruiters will read it as one.',baddie:'cool-dude-with-numbers@gmail is a lifestyle, not a contact method.',aunty:'That email address, beta? Make firstname.lastname, please.'},
+  find:t=>{const m=t.match(/\b[a-z0-9._-]*(cool|boy|girl|lover|king|queen|ninja|rockstar|dude|baby|sexy|\d{4,})[a-z0-9._-]*@[a-z0-9.-]+\.[a-z]{2,}/i);return{on:!!m,snip:m?m[0]:null}}},
+ {id:'ms',w:6,
+  r:{bestie:'"MS Office" in 2026 is like listing "can use a spoon", babe.',baddie:'"MS Office." Congratulations, you can open a laptop.',aunty:'MS Office? Beta, even my phone has MS Office.'},
+  find:t=>{const m=t.match(/\b(ms|microsoft) (office|word|excel|powerpoint)\b/i);return{on:!!m,snip:m?m[0]:null}}},
+ {id:'refs',w:6,
+  r:{bestie:'"References on request", babe? We both know you would have to make some phone calls first.',baddie:'"References on request" is the resume version of "my dad has a guy".',aunty:'References on request? Nobody asks, beta. They just assume.'},
+  find:t=>{const m=t.match(/references? (?:are )?(?:available )?(?:upon|on) request/i);return{on:!!m,snip:m?m[0]:null}}},
+ {id:'pron',w:5,
+  r:{bestie:'So many "I"s, babe. It is your resume, we know it is about you.',baddie:'"I am a hardworking..." The "I" is silent in good resumes.',aunty:'I, I, I... resumes do not need "I", beta.'},
+  find:(t,c)=>({on:c.iLines>=3,snip:null})}
+];
+function analyze(t){
+  const lines=t.split('\n').map(l=>l.trim()).filter(Boolean);
+  const mark=/^[-•*–·▪●]\s+/;
+  let bullets=lines.filter(l=>mark.test(l)).map(l=>l.replace(mark,''));
+  if(bullets.length<4)bullets=lines.filter(l=>l.split(/\s+/).length>=7&&!/^[A-Z\s&]{4,}$/.test(l));
+  const withNum=bullets.filter(b=>/\d/.test(b));
+  const noNum=bullets.find(b=>!/\d/.test(b));
+  const words=(t.match(/\S+/g)||[]).length;
+  const skillLine=lines.find(l=>(l.match(/[,|•]/g)||[]).length>=13);
+  const lo=t.toLowerCase();
+  const eduIdx=lo.search(/^\s*education\b/m),projIdx=lo.search(/^\s*(projects?|experience|work experience)\b/m);
+  return{lines,bullets,digitRatio:bullets.length?withNum.length/bullets.length:1,firstNoNum:noNum?noNum.slice(0,90):null,words,skillLine,
+    certLines:lines.filter(l=>/certif|course|workshop|webinar/i.test(l)).length,eduIdx,projIdx,iLines:lines.filter(l=>/^(i|my)\b/i.test(l)).length,
+    strongVerbs:(t.match(/\b(built|shipped|deployed|reduced|increased|designed|led|optimi[sz]ed|launched|automated|improved)\b/gi)||[]).length};
+}
+function localRoast(text,tone){
+  const ctx=analyze(text),hit=[];
+  for(const r of RULES){const f=r.find(text,ctx);if(f&&f.on)hit.push({r,snip:f.snip})}
+  hit.sort((a,b)=>b.r.w-a.r.w);
+  let bonus=0;if(ctx.digitRatio>=.6&&ctx.bullets.length>=4)bonus+=10;if(ctx.strongVerbs>=4)bonus+=8;
+  const score=clamp(Math.round(8+hit.reduce((s,h)=>s+h.r.w,0)*.72-bonus),0,100);
+  let items=hit.slice(0,6).map(h=>({quote:h.snip||null,roast:h.r.r[tone],real:false,fix:h.r.fix||null,rw:h.r.rewrite||null}));
+  const seenQ=[];
+  items.forEach(it=>{if(!it.quote)return;const q=it.quote.toLowerCase();if(seenQ.some(p=>p.includes(q)||q.includes(p)))it.quote=null;else seenQ.push(q)});
+  const gen=GEN[tone].slice();
+  while(items.length<3)items.push({quote:null,roast:gen.shift()||'Fine.',real:false,fix:null,rw:null});
+  let ri=items.findIndex(i=>i.fix);
+  let fix,rw;
+  if(ri<0){fix=GENFIX;rw=null;items.splice(Math.floor(items.length/2),0,{quote:null,roast:gen.shift()||GEN[tone][2],real:true})}
+  else{fix=items[ri].fix;rw=items[ri].rw;const [it]=items.splice(ri,1);it.real=true;items.splice(Math.floor((items.length+1)/2),0,it)}
+  return{engine:'local',score,verdict:VERD[tone][bandOf(score)],items:items.map(i=>({quote:i.quote,roast:i.roast,real:i.real})),real_fix:fix,rewrite:rw};
+}
+
+/* ---------- AI roast (Vercel function), with graceful fallback ---------- */
+async function aiRoast(scrubbed,tone){
+  const ctl=new AbortController();const to=setTimeout(()=>ctl.abort(),12000);
+  try{
+    const r=await fetch('/api/roast',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:scrubbed,tone}),signal:ctl.signal});
+    if(!r.ok)throw new Error('http '+r.status);
+    const j=await r.json();
+    if(j.not_resume)return{notResume:true};
+    if(j.engine!=='llm'||!Array.isArray(j.items)||j.items.length<3||typeof j.score!=='number')throw new Error('bad shape');
+    return j;
+  }finally{clearTimeout(to)}
+}
+
+/* ---------- UI ---------- */
+const SAD=`RAHUL SHARMA
+cooldude1234@gmail.com | +91 98765 43210 | github.com/rahul-codes
+
+CAREER OBJECTIVE
+Seeking a challenging position in a reputed organization where I can utilize my skills and grow along with the company.
+
+EDUCATION
+B.Tech Computer Science, XYZ Institute of Technology, CGPA 7.8 (2022-2026)
+
+SKILLS
+C, C++, Java, Python, HTML, CSS, JavaScript, React, Node, MongoDB, SQL, Git, Linux, MS Office, Photoshop, Canva, Excel, Communication, Leadership, Teamwork, Time Management
+
+PROJECTS
+- To-Do List App: Responsible for creating a to-do list using HTML, CSS and JavaScript.
+- Weather App: Worked on a weather app that shows the weather.
+- Netflix Clone: Helped in building a clone of Netflix.
+
+EXPERIENCE
+Intern, ABC Pvt Ltd (2 months)
+- Involved in various tasks assigned by the team lead.
+- Participated in meetings.
+
+I am a hardworking, passionate team player and quick learner who is detail-oriented and self-motivated.
+
+PERSONAL DETAILS
+Date of Birth: 01/01/2004
+Marital Status: Single
+Hobbies: Listening to music, cricket
+
+DECLARATION
+I hereby declare that the above information is true.
+References available upon request.`;
+const tone=()=>document.querySelector('input[name=tone]:checked').value;
+let last=null,busy=false;
+
+function updateSent(){
+  const t=$('resume').value;
+  if(!t.trim()){$('sent').textContent='(paste something to preview)';return}
+  const s=scrub(t);
+  $('sent').textContent=s.text;
+  $('sentNote').textContent=s.count?`${s.count} personal detail${s.count===1?'':'s'} masked in your browser before sending.`:'Nothing looked like personal contact info. Check the text below anyway.';
+}
+$('resume').addEventListener('input',updateSent);
+
+async function roast(){
+  if(busy)return;
+  const text=$('resume').value;
+  if(text.trim().length<80){$('out').innerHTML='<section class="card"><p style="margin:0"><b>Paste a bit more, babe.</b> I need at least a few lines to roast.</p></section>';return}
+  busy=true;$('run').disabled=true;
+  const t0=performance.now(),tn=tone();
+  $('out').innerHTML=`<section class="card loader"><div class="mtile">${rotiSVG()}</div><p class="quip">Heating the tawa...</p></section>`;
+  const lt=$('out').querySelector('.toast');setMood(lt,'wince');
+  $('out').scrollIntoView({behavior:reduced()?'auto':'smooth',block:'start'});
+  let res,fromAI=false;
+  try{
+    const a=await aiRoast(scrub(text).text,tn);
+    if(a.notResume){busy=false;$('run').disabled=false;$('out').innerHTML='<section class="card"><p style="margin:0"><b>That does not look like a resume, babe.</b> Paste your resume or LinkedIn About section and try again.</p></section>';return}
+    res=a;fromAI=true;
+  }catch(e){res=localRoast(text,tn)}
+  const wait=Math.max(0,900-(performance.now()-t0));
+  await new Promise(r=>setTimeout(r,wait));
+  last={res,text,tone:tn,fromAI};
+  render();
+  busy=false;$('run').disabled=false;
+}
+
+
+function render(){
+  const {res,text,fromAI}=last,score=clamp(res.score,0,100),band=bandOf(score);
+  const mood=['calm','wince','shock','burnt'][band];
+  const marks=[];
+  res.items.forEach((it,i)=>{if(!it.quote)return;const k=text.toLowerCase().indexOf(it.quote.toLowerCase());if(k>=0)marks.push({s:k,e:k+it.quote.length,n:i+1})});
+  marks.sort((a,b)=>a.s-b.s||(b.e-b.s)-(a.e-a.s));
+  let hl='',pos=0;
+  for(const m of marks){if(m.s<pos)continue;hl+=esc(text.slice(pos,m.s))+'<mark>'+esc(text.slice(m.s,m.e))+'<sup>'+m.n+'</sup></mark>';pos=m.e}
+  hl+=esc(text.slice(pos));
+  const tints=['t1','t2','t3','t4','t5','t1'];
+  const items=res.items.map((it,i)=>`<li class="item ${tints[i%6]}" data-real="${it.real?1:0}"><span class="n">${i+1}</span><span class="tag2">THE REAL ADVICE</span>${it.quote?`<div class="q">You wrote: "${esc(it.quote)}"</div>`:''}<p class="t">${esc(it.roast)}</p></li>`).join('');
+  $('out').innerHTML=`
+  <section class="card res">
+    <div class="verdict">
+      <div class="mtile">${rotiSVG()}</div>
+      <div class="vtext">
+        <span class="chip ${fromAI?'ai':''}">${fromAI?'AI roast (Claude)':'Backup roaster: rule-based, no AI'}</span>
+        <div class="score">${score}<small> / 100 brutality</small></div>
+        <div class="gauge" role="img" aria-label="Brutality ${score} out of 100"><i id="gi"></i></div>
+        <div class="label">${LABELS[band]}</div>
+        <div class="quip">${esc(res.verdict)}</div>
+      </div>
+    </div>
+    <div class="sh" style="margin-top:24px"><h2>The roast</h2></div>
+    <p class="note" style="margin:0">One of these is real advice wearing a joke. Can you spot it?</p>
+    <ol class="items" id="items">${items}</ol>
+    <div class="fixbox" id="fixbox"><b>The real advice</b><span id="fixtxt"></span>${res.rewrite?`<div class="rewrite">Try something like:<br><code>${esc(res.rewrite)}</code></div>`:''}</div>
+    <div class="row" style="margin-top:20px">
+      <button class="btn" id="reveal" type="button">Which one was real?</button>
+      <button class="btn2" id="again" type="button">Roast me again</button>
+    </div>
+  </section>
+  <section class="card res">
+    <div class="sh"><h2>Your resume, marked up</h2></div>
+    <div class="jd">${hl}</div>
+    <div class="row" style="margin-top:18px">
+      <button class="btn" id="mkcard" type="button">Make share card</button>
+      <button class="btn2" id="copy" type="button">Copy as text</button>
+      <span id="copied" class="note" style="margin:0"></span>
+    </div>
+  </section>`;
+  $('fixtxt').textContent=res.real_fix;
+  const tv=$('out').querySelector('.toast');setMood(tv,mood);if(!reduced())recoil(tv);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{$('gi').style.width=score+'%'}));
+  $('reveal').onclick=()=>{
+    document.querySelectorAll('#items .item').forEach(li=>{if(li.dataset.real==='1')li.classList.add('real')});
+    $('fixbox').classList.add('on');$('reveal').disabled=true;$('reveal').textContent='There it is';
+    const r=document.querySelector('#items .item.real');if(r)r.scrollIntoView({behavior:reduced()?'auto':'smooth',block:'center'});
+  };
+  $('again').onclick=()=>{$('paste').scrollIntoView({behavior:reduced()?'auto':'smooth',block:'start'});$('resume').focus()};
+  $('mkcard').onclick=makeCard;
+  const summary=`Resume Roast: ${score}/100 (${LABELS[band]}). ${res.verdict}\n`+res.items.map((it,i)=>`${i+1}. ${it.roast}`).join('\n');
+  $('copy').onclick=async()=>{try{await navigator.clipboard.writeText(summary);$('copied').textContent='Copied.'}catch(e){$('copied').textContent='Copy blocked here. Select the roast and copy manually.'}};
+}
+
+/* ---------- share card ---------- */
+let lastBlob=null;
+function rr(x,px,py,w,h,r){x.beginPath();x.moveTo(px+r,py);x.arcTo(px+w,py,px+w,py+h,r);x.arcTo(px+w,py+h,px,py+h,r);x.arcTo(px,py+h,px,py,r);x.arcTo(px,py,px+w,py,r);x.closePath()}
+function wrapText(x,text,px,py,maxW,lh){const words=text.split(' ');let line='',y=py;for(const w of words){const test=line?line+' '+w:w;if(x.measureText(test).width>maxW&&line){x.fillText(line,px,y);line=w;y+=lh}else line=test}x.fillText(line,px,y);return y}
+function drawRoti(x,cx,cy,s,mood){
+  const v=MOODV[mood]||MOODV.calm;
+  x.save();x.translate(cx,cy);x.scale(s/200,s/200);x.translate(-100,-106);
+  x.lineCap='round';x.lineJoin='round';
+  // flames
+  const fg=x.createLinearGradient(0,210,0,180);fg.addColorStop(0,'#FF3D2E');fg.addColorStop(.55,'#FF9A2E');fg.addColorStop(1,'#FFE27A');
+  x.globalAlpha=v[2];x.fillStyle=fg;
+  [[44,182,40,196,50,206,56,196,52,188,60,200,66,208,72,196,66,184],[84,184,80,200,92,212,100,198,96,188,106,202,112,210,120,196,112,184],[128,184,126,198,136,208,142,196,138,188,148,198,154,204,158,192,148,182]].forEach(f=>{
+    x.beginPath();x.moveTo(f[0],f[1]);x.quadraticCurveTo(f[2],f[3],f[4],f[5]);x.quadraticCurveTo(f[6],f[7],f[8],f[9]);x.quadraticCurveTo(f[10],f[11],f[12],f[13]);x.quadraticCurveTo(f[14],f[15],f[16],f[17]);x.closePath();x.fill()});
+  x.globalAlpha=1;
+  // tawa
+  x.fillStyle='#1f0e17';x.beginPath();x.ellipse(100,176,90,19,0,0,7);x.fill();
+  x.fillStyle='#34202b';x.beginPath();x.ellipse(100,172,82,14,0,0,7);x.fill();
+  x.save();x.translate(176,173);x.rotate(-8*Math.PI/180);x.fillStyle='#1f0e17';rr(x,0,-4,30,9,4.5);x.fill();x.restore();
+  // roti
+  const rg=x.createRadialGradient(86,76,6,100,100,92);rg.addColorStop(0,'#FFE7B5');rg.addColorStop(.6,'#EDB66C');rg.addColorStop(1,'#C98536');
+  x.save();x.translate(100,100);x.scale(mood==='shock'?1.06:1,mood==='shock'?1.06:1);x.translate(-100,-100);
+  x.fillStyle=rg;x.beginPath();x.arc(100,100,70,0,7);x.fill();x.lineWidth=3;x.strokeStyle='#B0691F';x.stroke();
+  x.globalAlpha=v[1];x.fillStyle='#6B3510';[[60,68,9,6.5],[138,62,8,6],[152,116,9,7],[50,128,8,6],[124,152,9,6],[84,54,6,4.5],[78,154,7,5]].forEach(e=>{x.beginPath();x.ellipse(e[0],e[1],e[2],e[3],0,0,7);x.fill()});
+  x.globalAlpha=1;
+  if(v[0]){x.save();x.beginPath();x.arc(100,100,68,0,7);x.clip();const cg=x.createRadialGradient(100,100,10,100,100,72);cg.addColorStop(0,'rgba(42,18,8,0)');cg.addColorStop(.65,'rgba(42,18,8,'+(.5*v[0]/.62)+')');cg.addColorStop(1,'rgba(18,8,4,'+(.95*v[0]/.62)+')');x.fillStyle=cg;x.fillRect(20,20,160,160);x.restore()}
+  x.restore();
+  // blush
+  x.fillStyle='rgba(255,127,168,.6)';x.beginPath();x.ellipse(62,118,9,5,0,0,7);x.fill();x.beginPath();x.ellipse(138,118,9,5,0,0,7);x.fill();
+  const L=(pts,w,col)=>{x.strokeStyle=col;x.lineWidth=w;x.beginPath();pts.forEach((p,i)=>{if(p[0]==='M')x.moveTo(p[1],p[2]);else if(p[0]==='L')x.lineTo(p[1],p[2]);else x.quadraticCurveTo(p[1],p[2],p[3],p[4])});x.stroke()};
+  const brow='#3a1a10',liner='#1a0810';
+  if(mood==='calm'){
+    L([['M',64,84],['Q',78,78,92,83]],3,brow);L([['M',108,78],['Q',124,68,138,78]],3,brow);
+    [[78],[122]].forEach(e=>{const ex=e[0];x.fillStyle='#fff';x.beginPath();x.moveTo(ex-15,99);x.quadraticCurveTo(ex,88,ex+15,99);x.quadraticCurveTo(ex,108,ex-15,99);x.fill();x.fillStyle='#2a0f1a';x.beginPath();x.arc(ex,99,5.2,0,7);x.fill();x.fillStyle='#fff';x.beginPath();x.arc(ex+2,97,1.6,0,7);x.fill()});
+    L([['M',61,100],['Q',78,84,95,99]],3.2,liner);L([['M',62,100],['L',52,92]],3.2,liner);L([['M',105,99],['Q',122,84,139,100]],3.2,liner);L([['M',138,100],['L',148,92]],3.2,liner);
+    x.save();x.translate(100,128);x.rotate(-4*Math.PI/180);x.translate(-100,-128);x.fillStyle='#E0245E';x.beginPath();x.moveTo(84,126);x.quadraticCurveTo(100,118,116,126);x.quadraticCurveTo(100,142,84,126);x.fill();L([['M',84,126],['Q',100,131,116,126]],1.4,'#8F1238');L([['M',93,128],['Q',100,126,107,128]],1.6,'rgba(255,255,255,.75)');x.restore();
+  }else if(mood==='wince'){
+    L([['M',62,82],['Q',78,88,94,80]],3,brow);L([['M',106,80],['Q',122,88,138,82]],3,brow);
+    L([['M',62,101],['Q',78,92,94,101]],3.4,liner);L([['M',106,101],['Q',122,92,138,101]],3.4,liner);L([['M',60,102],['L',50,96]],3.4,liner);L([['M',140,102],['L',150,96]],3.4,liner);
+    L([['M',88,130],['Q',94,124,100,130],['Q',106,136,112,130]],5,'#E0245E');
+  }else if(mood==='shock'){
+    L([['M',62,76],['Q',78,66,94,74]],3,brow);L([['M',106,74],['Q',122,66,138,76]],3,brow);
+    [78,122].forEach(ex=>{x.fillStyle='#fff';x.beginPath();x.arc(ex,98,11,0,7);x.fill();x.lineWidth=3;x.strokeStyle=liner;x.stroke();x.fillStyle='#2a0f1a';x.beginPath();x.arc(ex,99,5,0,7);x.fill();x.fillStyle='#fff';x.beginPath();x.arc(ex+2,96,1.6,0,7);x.fill()});
+    L([['M',64,92],['L',55,84]],3.2,liner);L([['M',136,92],['L',145,84]],3.2,liner);
+    x.fillStyle='#E0245E';x.beginPath();x.ellipse(100,128,9,11,0,0,7);x.fill();x.fillStyle='#5a0a22';x.beginPath();x.ellipse(100,130,5,7,0,0,7);x.fill();
+  }else{
+    L([['M',62,84],['Q',78,86,94,84]],3,brow);L([['M',106,84],['Q',122,86,138,84]],3,brow);
+    L([['M',62,100],['Q',78,106,94,100]],3.4,liner);L([['M',106,100],['Q',122,106,138,100]],3.4,liner);L([['M',60,99],['L',50,92]],3.4,liner);L([['M',140,99],['L',150,92]],3.4,liner);
+    L([['M',90,132],['Q',100,124,110,132]],5,'#E0245E');
+  }
+  // bindi, stud, jhumkas
+  x.fillStyle='#D7263D';x.beginPath();x.arc(100,70,4.2,0,7);x.fill();x.strokeStyle='#F2C14E';x.lineWidth=1.8;x.beginPath();x.arc(100,70,6.8,0,7);x.stroke();
+  x.fillStyle='#FFE08A';x.beginPath();x.arc(110,112,2,0,7);x.fill();
+  [[31,1],[169,-1]].forEach(j=>{const jx=j[0];x.fillStyle='#F2C14E';x.strokeStyle='#B9801A';x.lineWidth=1;x.beginPath();x.arc(jx,102,3,0,7);x.fill();x.beginPath();x.moveTo(jx-8,112);x.quadraticCurveTo(jx,96,jx+8,112);x.closePath();x.fill();x.stroke();[-6,0,6].forEach((d,i)=>{x.beginPath();x.arc(jx+d,i===1?117:115,2.3,0,7);x.fill()})});
+  if(mood==='burnt'){x.fillStyle='rgba(185,174,163,.85)';[[64,26,9],[100,14,11],[138,28,8]].forEach(p=>{x.beginPath();x.arc(p[0],p[1],p[2],0,7);x.fill()})}
+  x.restore();
+}
+async function makeCard(){
+  if(!last)return;
+  const {res}=last,score=clamp(res.score,0,100),band=bandOf(score),mood=['calm','wince','shock','burnt'][band];
+  try{await Promise.all([document.fonts.load('900 110px Fraunces'),document.fonts.load('700 44px Kalam'),document.fonts.load('600 38px "Plus Jakarta Sans"'),document.fonts.load('500 38px "Plus Jakarta Sans"')])}catch(e){}
+  const W=1080,H=1350,c=document.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d');
+  const SERIF='Fraunces,Georgia,serif',HAND='Kalam,"Comic Sans MS",cursive',SANS='"Plus Jakarta Sans",system-ui,sans-serif';
+  const INK='#1B1A3A',CREAM='#FFF4DC',HALDI='#FFB703',CHILLI='#E63B2E',TEAL='#0E7C86';
+  x.fillStyle=CREAM;x.fillRect(0,0,W,H);
+  // block-print booti pattern
+  x.fillStyle='rgba(27,26,58,.06)';
+  for(let yy=0;yy<H+80;yy+=80)for(let xx=0;xx<W+80;xx+=80){x.beginPath();x.arc(xx+40,yy+40,3,0,7);x.fill();[[0,-12,4,8],[0,12,4,8],[-12,0,8,4],[12,0,8,4]].forEach(e=>{x.beginPath();x.ellipse(xx+40+e[0],yy+40+e[1],e[2],e[3],0,0,7);x.fill()})}
+  // toran
+  x.fillStyle=INK;x.fillRect(0,0,W,12);
+  const pc=[HALDI,CHILLI,TEAL,'#FF8FAB'];
+  for(let i=0,px=10;px<W;i++,px+=64){x.fillStyle=pc[i%4];x.beginPath();x.moveTo(px,12);x.lineTo(px+52,12);x.lineTo(px+26,76);x.closePath();x.fill();x.strokeStyle=INK;x.lineWidth=2.5;x.stroke()}
+  x.textBaseline='alphabetic';x.textAlign='left';
+  // title
+  x.fillStyle=CHILLI;x.font='700 54px '+HAND;x.save();x.translate(72,176);x.rotate(-3*Math.PI/180);x.fillText('tawa garam hai',0,0);x.restore();
+  x.fillStyle=INK;x.font='900 104px '+SERIF;x.fillText('Resume',70,290);
+  const rw=x.measureText('Roast').width;x.fillStyle=HALDI;rr(x,62,362,rw+30,42,12);x.fill();
+  x.fillStyle=INK;x.fillText('Roast',70,402);
+  // arch with mascot
+  const ax=690,ay=130,aw=300,ah=400;
+  const arch=(px,py,w,h)=>{x.beginPath();x.moveTo(px,py+h);x.lineTo(px,py+w/2);x.arc(px+w/2,py+w/2,w/2,Math.PI,0);x.lineTo(px+w,py+h);x.closePath()};
+  arch(ax-14,ay-14,aw+28,ah+28);x.fillStyle=HALDI;x.fill();x.lineWidth=5;x.strokeStyle=INK;x.stroke();
+  arch(ax,ay,aw,ah);x.fillStyle='#FFC9C0';x.fill();x.lineWidth=3;x.stroke();
+  x.save();arch(ax,ay,aw,ah);x.clip();drawRoti(x,ax+aw/2,ay+ah-150,300,mood);x.restore();
+  // score
+  x.fillStyle=INK;x.font='900 200px '+SERIF;x.fillText(String(score),70,650);
+  const sw=x.measureText(String(score)).width;x.fillStyle='#5E5A7A';x.font='700 40px '+SANS;x.fillText('/100 brutality',70+sw+20,650);
+  x.fillStyle='#fff';rr(x,70,686,940,40,20);x.fill();
+  x.save();rr(x,70,686,940,40,20);x.clip();const gg=x.createLinearGradient(70,0,1010,0);gg.addColorStop(0,HALDI);gg.addColorStop(.55,'#FF7A3D');gg.addColorStop(1,CHILLI);x.fillStyle=gg;x.fillRect(70,686,940*score/100,40);x.restore();
+  x.lineWidth=4;x.strokeStyle=INK;rr(x,70,686,940,40,20);x.stroke();
+  x.fillStyle=CHILLI;x.font='700 60px '+HAND;x.fillText(LABELS[band],70,806);
+  // quote card
+  const pick=res.items.find(i=>!i.real)||res.items[0];
+  x.fillStyle=INK;rr(x,78,846,940,330,30);x.fill();
+  x.fillStyle='#fff';rr(x,70,838,940,330,30);x.fill();x.lineWidth=4;x.strokeStyle=INK;x.stroke();
+  x.save();rr(x,70,838,940,330,30);x.clip();x.fillStyle=HALDI;x.fillRect(70,838,22,330);x.restore();
+  x.fillStyle='#5E5A7A';x.font='italic 500 30px '+SANS;
+  let y=898;
+  if(pick.quote){let qt=pick.quote;const full=()=>'You wrote: "'+qt+(qt!==pick.quote?'...':'')+'"';while(x.measureText(full()).width>840&&qt.length>10)qt=qt.slice(0,-2);x.fillText(full(),112,y);y+=14}
+  x.fillStyle=INK;x.font='700 44px '+SANS;
+  const end=wrapText(x,pick.roast.length>170?pick.roast.slice(0,167)+'...':pick.roast,112,y+56,860,56);
+  x.fillStyle=TEAL;x.font='700 30px '+SANS;
+  x.fillText('+ one line of real advice hidden in there',112,Math.min(end+70,1130));
+  x.textAlign='center';x.fillStyle=INK;x.font='700 46px '+HAND;
+  x.fillText('Get your resume roasted, yaar',W/2,H-62);
+  x.fillStyle=INK;x.fillRect(0,H-14,W,14);
+  $('cardImg').src=c.toDataURL('image/png');
+  lastBlob=await new Promise(r=>c.toBlob(r,'image/png'));
+  $('saveNote').textContent='';$('modal').hidden=false;$('saveCard').focus();
+}
+$('closeCard').onclick=()=>{$('modal').hidden=true};
+$('modal').addEventListener('click',e=>{if(e.target===$('modal'))$('modal').hidden=true});
+addEventListener('keydown',e=>{if(e.key==='Escape')$('modal').hidden=true});
+$('saveCard').onclick=async()=>{
+  const note=m=>{$('saveNote').textContent=m};
+  try{
+    if(!lastBlob){note('Card not ready. Close and try again.');return}
+    const d=(window.claude&&window.claude.use)?await window.claude.use('downloads'):null;
+    if(!d){const u=URL.createObjectURL(lastBlob),el=document.createElement('a');el.href=u;el.download='resume-roast.png';document.body.appendChild(el);el.click();el.remove();setTimeout(()=>URL.revokeObjectURL(u),2000);note('Saved. If nothing happened, long-press or right-click the image.');return}
+    await d.save({filename:'resume-roast.png',data:lastBlob});note('Saved. Post it and tag a friend.');
+  }catch(e){if(e&&e.code==='declined')note('No worries. Hit Save image if you change your mind.');else note('Could not save here. Long-press or right-click the image instead.')}
+};
+
+$('run').onclick=roast;
+$('sample').onclick=()=>{$('resume').value=SAD;updateSent();roast()};
+
+
+/* ---------- desi snacks in the margins: hover to spin ---------- */
+(function(){
+  const INK='#1B1A3A',O=(w)=>`class="ol" stroke-width="${w||3.5}" stroke-linejoin="round" stroke-linecap="round"`;
+  const face=(cx,cy,gap,extra)=>`<circle cx="${cx-gap}" cy="${cy}" r="3.4" fill="${INK}"/><circle cx="${cx+gap}" cy="${cy}" r="3.4" fill="${INK}"/><circle cx="${cx-gap+1.2}" cy="${cy-1.2}" r="1.1" fill="#fff"/><circle cx="${cx+gap+1.2}" cy="${cy-1.2}" r="1.1" fill="#fff"/><path d="M${cx-5.5} ${cy+11} Q${cx} ${cy+18} ${cx+5.5} ${cy+11}" fill="none" stroke="${INK}" stroke-width="3" stroke-linecap="round"/><ellipse cx="${cx-gap-8}" cy="${cy+9}" rx="6" ry="3.4" fill="#FF8FAB" opacity=".85"/><ellipse cx="${cx+gap+8}" cy="${cy+9}" rx="6" ry="3.4" fill="#FF8FAB" opacity=".85"/>${extra||''}`;
+  function spiral(){let d='';const turns=2.7,steps=150;for(let i=0;i<=steps;i++){const t=i/steps,a=t*turns*2*Math.PI-Math.PI/2,r=6+t*40;d+=(i?'L':'M')+(60+Math.cos(a)*r).toFixed(1)+' '+(60+Math.sin(a)*r).toFixed(1)}return d}
+  function marigold(){let s='';for(let k=0;k<14;k++)s+=`<ellipse ${O(2.2)} cx="60" cy="34" rx="11" ry="21" fill="${k%2?'#FFB703':'#FF9F1C'}" transform="rotate(${k*360/14} 60 60)"/>`;
+    for(let k=0;k<10;k++)s+=`<ellipse cx="60" cy="46" rx="7" ry="13" fill="${k%2?'#FFD166':'#FFC23C'}" stroke="#E8791A" stroke-width="1" transform="rotate(${k*36+10} 60 60)"/>`;
+    return s+`<circle ${O(2.5)} cx="60" cy="60" r="8" fill="#E8791A"/><circle cx="57.5" cy="57.5" r="2.2" fill="#FFD28A"/>`}
+  const ART={
+   samosa:`<path ${O()} d="M60 12 Q64 12 67 18 L111 94 Q116 104 106 106 L14 106 Q4 104 9 94 L53 18 Q56 12 60 12Z" fill="#F0AD4E"/><path d="M62 24 L102 94 Q104 99 98 100 L64 100Z" fill="#DE8F2F" opacity=".5"/><path d="M17 100 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0 q3.2 -6 6.4 0" fill="none" stroke="${INK}" stroke-width="2" opacity=".55"/><circle cx="46" cy="52" r="3" fill="#FFD58A"/><circle cx="76" cy="56" r="2.4" fill="#FFD58A"/><circle cx="56" cy="40" r="2" fill="#FFD58A"/>${face(60,70,12,`<path d="M43 68 L38 64 M77 68 L82 64" stroke="${INK}" stroke-width="2.4" stroke-linecap="round"/>`)}`,
+   jalebi:`<path d="${spiral()}" fill="none" class="ol" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><path d="${spiral()}" fill="none" stroke="#FF8A1F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="${spiral()}" fill="none" stroke="#FFD28A" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="9 17" transform="translate(-1.5 -2)"/>`,
+   diya:`<circle cx="60" cy="38" r="28" fill="#FFB703" opacity=".22"/><g class="flame"><path ${O(3)} d="M60 10 C75 28 77 42 60 56 C43 42 45 28 60 10Z" fill="#FF8A1F"/><path d="M60 26 C68 35 68 44 60 51 C52 44 52 35 60 26Z" fill="#FFE08A"/></g><path ${O(3)} d="M60 56 L60 66"/><path ${O()} d="M12 70 Q60 60 108 70 Q102 110 60 110 Q18 110 12 70Z" fill="#D9622B"/><path d="M18 74 Q60 66 102 74" fill="none" stroke="#FFD58A" stroke-width="2.4" stroke-linecap="round" opacity=".8"/>${face(60,86,12)}`,
+   marigold:marigold(),
+   kite:`<polygon points="60,6 16,46 60,46" fill="#E63B2E"/><polygon points="60,6 104,46 60,46" fill="#FFB703"/><polygon points="104,46 60,92 60,46" fill="#0E7C86"/><polygon points="16,46 60,92 60,46" fill="#FF8FAB"/><polygon ${O()} points="60,6 104,46 60,92 16,46" fill="none"/><path d="M60 6 L60 92 M16 46 L104 46" stroke="${INK}" stroke-width="2.4" class="ol" fill="none"/><path ${O(3)} d="M60 92 q-10 6 0 11 q10 5 0 10" fill="none"/><circle ${O(2.4)} cx="56" cy="99" r="3.6" fill="#FFB703"/><circle ${O(2.4)} cx="64" cy="108" r="3.6" fill="#E63B2E"/>`,
+   chai:`<path d="M44 38 q-7 -8 0 -15 q7 -8 0 -15" fill="none" stroke="#9A96BF" stroke-width="3.6" stroke-linecap="round" class="steam"/><path d="M60 40 q-7 -8 0 -15 q7 -8 0 -15" fill="none" stroke="#9A96BF" stroke-width="3.6" stroke-linecap="round" class="steam s2"/><path d="M76 38 q-7 -8 0 -15 q7 -8 0 -15" fill="none" stroke="#9A96BF" stroke-width="3.6" stroke-linecap="round" class="steam s3"/><path ${O()} d="M24 54 L96 54 L88 106 Q87 113 80 113 L40 113 Q33 113 32 106Z" fill="#C8653A"/><ellipse ${O(3)} cx="60" cy="54" rx="36" ry="8.5" fill="#8B4A2B"/><ellipse cx="60" cy="54" rx="31" ry="6.2" fill="#E3B07A"/><path d="M34 70 H86" stroke="#FFD58A" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 7"/>${face(60,88,11)}`,
+   golgappa:`<path d="M60 7 q7 9 0 13 q-7 -4 0 -13Z" fill="#5CBF6A" class="ol" stroke-width="2.4" stroke-linejoin="round"/><path ${O()} d="M60 28 C86 26 100 48 98 70 C96 94 76 108 60 108 C42 108 22 94 22 70 C20 48 36 26 60 28Z" fill="#F2BE6A"/><ellipse ${O(2.6)} cx="60" cy="32" rx="14" ry="5.5" fill="#6B3510"/><ellipse cx="60" cy="33" rx="9" ry="3" fill="#5CBF6A"/><circle cx="36" cy="52" r="3" fill="#FFE0A3"/><circle cx="84" cy="56" r="2.4" fill="#FFE0A3"/><circle cx="76" cy="46" r="2" fill="#FFE0A3"/><circle cx="48" cy="68" r="3.4" fill="${INK}"/><circle cx="72" cy="68" r="3.4" fill="${INK}"/><circle cx="49.2" cy="66.8" r="1.1" fill="#fff"/><circle cx="73.2" cy="66.8" r="1.1" fill="#fff"/><ellipse cx="60" cy="84" rx="6" ry="5.2" fill="#7A1F2E"/><ellipse cx="38" cy="78" rx="6" ry="3.4" fill="#FF8FAB" opacity=".85"/><ellipse cx="82" cy="78" rx="6" ry="3.4" fill="#FF8FAB" opacity=".85"/>`,
+   bangles:`<g fill="none" stroke-linecap="round">`+[[34,'#0E7C86'],[52,'#FFB703'],[70,'#E63B2E'],[88,'#FF8FAB']].map(r=>`<ellipse class="ol" cx="60" cy="${r[0]}" rx="42" ry="14" stroke-width="12"/><ellipse cx="60" cy="${r[0]}" rx="42" ry="14" stroke="${r[1]}" stroke-width="7"/><ellipse cx="60" cy="${r[0]}" rx="42" ry="14" stroke="#fff" stroke-width="1.8" stroke-dasharray="1 9" opacity=".9"/>`).join('')+`</g>`
+  };
+  const D=[
+   {k:'samosa',s:'L',y:.14,dir:1,f:1,dx:0},{k:'jalebi',s:'L',y:.38,dir:-1,f:.95,dx:.5},{k:'diya',s:'L',y:.62,dir:1,f:.95,dx:-.5},{k:'marigold',s:'L',y:.86,dir:-1,f:.95,dx:.4},
+   {k:'kite',s:'R',y:.12,dir:-1,f:1,dx:-.3},{k:'chai',s:'R',y:.37,dir:1,f:1,dx:.5},{k:'golgappa',s:'R',y:.61,dir:-1,f:.95,dx:-.5},{k:'bangles',s:'R',y:.85,dir:1,f:.95,dx:.3}];
+  const host=document.createElement('div');host.id='decos';host.setAttribute('aria-hidden','true');document.body.appendChild(host);
+  const items=D.map((d,i)=>{
+    const el=document.createElement('div');el.className='deco';el.style.animationDelay=(i*.6)+'s';
+    el.innerHTML=`<div class="hit"><div class="spin"><svg class="art" viewBox="0 0 120 120">${ART[d.k]}</svg></div></div>`;
+    host.appendChild(el);
+    const b={el,spin:el.querySelector('.spin'),d,ang:0,v:0,hover:false,dir:d.dir};
+    const hit=el.querySelector('.hit');
+    hit.addEventListener('pointerenter',()=>{b.hover=true;el.classList.add('hot');go()});
+    hit.addEventListener('pointerleave',()=>{b.hover=false;el.classList.remove('hot');go()});
+    hit.addEventListener('pointerdown',()=>{b.v+=b.dir*620;go()});
+    return b;
+  });
+  window.__decos=items;
+  function layout(){
+    const W=innerWidth,H=innerHeight,m=(W-1100)/2;
+    if(m<120){host.style.display='none';return}
+    host.style.display='block';
+    const base=Math.min(170,m-30,H*.2);
+    items.forEach(b=>{const s=base*b.d.f,cx=(b.d.s==='L'?m/2:W-m/2)+b.d.dx*Math.max(0,(m-s-40))/2,cy=b.d.y*H;
+      Object.assign(b.el.style,{width:s+'px',height:s+'px',left:(cx-s/2)+'px',top:Math.max(92,cy-s/2)+'px'})});
+  }
+  addEventListener('resize',layout);layout();
+  let raf=0,last=0;
+  function go(){if(!raf&&!reduced()){last=performance.now();raf=requestAnimationFrame(tick)}}
+  function tick(t){raf=0;const dt=Math.min(.05,(t-last)/1000);last=t;let act=false;
+    items.forEach(b=>{const tg=b.hover?b.dir*130:0;b.v+=(tg-b.v)*(1-Math.exp(-dt*(b.hover?3:1.5)));if(!b.hover&&Math.abs(b.v)<1.5)b.v=0;b.ang=(b.ang+b.v*dt)%360;if(b.v||b.hover){b.spin.style.transform=`rotate(${b.ang.toFixed(2)}deg)`;act=true}});
+    if(act)raf=requestAnimationFrame(tick)}
+})();
+$('heroToast').innerHTML=rotiSVG();
+$('sample2').onclick=()=>{$('sample').click()};
+$('cta').addEventListener('click',e=>{e.preventDefault();$('paste').scrollIntoView({behavior:reduced()?'auto':'smooth',block:'start'});setTimeout(()=>$('resume').focus({preventScroll:true}),400)});
+
+</script>
+</body>
+</html>
