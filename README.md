@@ -11,7 +11,9 @@
 <p align="center">
   <img src="docs/screenshots/hero.png" alt="The Resume Roast homepage: a festive toran and marquee, a big serif headline, and a baddie roti mascot standing in a jharokha arch with floating roast bubbles" width="880">
 </p>
-
+<p align="center">
+  https://resume-roaster-alpha-ten.vercel.app/
+  </p>
 <p align="center">
   <img src="docs/screenshots/demo.gif" alt="Screen recording: pasting a resume, the roti mascot reacting, and the roast appearing" width="720">
 </p>
